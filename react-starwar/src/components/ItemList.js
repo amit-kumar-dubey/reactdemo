@@ -20,3 +20,26 @@ const mapStateToProps = ({ items }) => ({
 });
 
 export default connect(mapStateToProps)(ItemList);
+
+
+
+
+function processData(items){
+  if (!data) { return; }
+
+  for (var i = 0; i< items.length; i++){
+    var val = items[i];
+   if (val.children.items) {
+       processData(val.children.items);
+    }
+  }
+}
+
+
+var it = processData(data);
+var res = it.next();
+
+while(!res.done){
+  console.log(res.value);
+  res = it.next();
+}
