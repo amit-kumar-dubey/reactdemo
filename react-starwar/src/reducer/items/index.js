@@ -1,11 +1,11 @@
-import { SET_CHARACTERS } from './actions';
+import { SET_ITEMS } from './actions';
 
 const initialState = [];
 
 export default (state = initialState, action) => {
   switch (action.type) {
-    case SET_CHARACTERS:
-      return action.characters;
+    case SET_ITEMS:
+      return action.items;
     default:
       return state;
   }

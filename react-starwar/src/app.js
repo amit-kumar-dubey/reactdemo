@@ -9,7 +9,7 @@ import thunk from 'redux-thunk';
 
 import reducer from './reducer';
 
-import { getCharacters } from './reducer/characters/actions';
+import { getCharacters } from './reducer/items/actions';
 
 
 
