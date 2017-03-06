@@ -34,8 +34,6 @@ function processData(items){
     }
   }
 }
-
-
 var it = processData(data);
 var res = it.next();
 
