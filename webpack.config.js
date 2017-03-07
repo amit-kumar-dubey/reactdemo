@@ -7,6 +7,7 @@ module.exports = {
     module: {
         loaders: [
             { test: /\.css$/, loaders: ["style-loader", "css-loader"] },
+            { test: /\.json$/, loader: 'json' },
             {
                 test: /\.(js|jsx)$/,
                 exclude: /(node_modules|bower_components)/,

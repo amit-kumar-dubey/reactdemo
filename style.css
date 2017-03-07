@@ -37,3 +37,6 @@ blockquote, q {
 	quotes: none;
 	background-color:red; 
 }
+.hidden{
+	display: none;
+}

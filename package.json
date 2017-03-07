@@ -28,7 +28,7 @@
     "webpack setup"
   ],
   "scripts": {
-    "test": ""
+    "serve": "webpack-dev-server "
   },
   "readmeFilename": "README.md",
   "author": "amitkumardubey",
