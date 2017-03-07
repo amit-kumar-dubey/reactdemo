@@ -9,7 +9,6 @@ export function getCharacters() {
       .then(res => res.items)
       .then(items =>
         dispatch(setCharacters(items))
-
       );
 }
 export function setCharacters(items) {
