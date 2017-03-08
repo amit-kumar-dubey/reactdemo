@@ -1,13 +1,9 @@
 import React from 'react';
-import data from './tree.json';
+//import data from './tree.json';
 class App extends React.Component {
    constructor() {
       super();
-
-
-
-
-      this.state = {
+   this.state = {
                         label: 'Node Label 1',
                         items: [
                             {
@@ -94,14 +90,14 @@ class App extends React.Component {
 
                         ]
                      }
- this.state = data;
+ // this.state = data;
    }
    
    render() {
     
       return (
          <ul>
-            <li>Preants , {this.state.label}</li>
+            <li>{this.state.label}</li>
             
             {
                this.state.items.map(function(item,i){
@@ -133,9 +129,12 @@ var count = false;
 if(item.length>0){
   count = true;
 }
+else{
+  count = false;
+}
       return (
          <ul>
-         <li onClick={this.handleClick.bind(this)}><i className={count?'show':'hidden'}>+</i>Child , {item.label}</li>
+         <li onClick={this.handleClick.bind(this)}><i className={count?'fa fa-minus':'fa fa-plus'} aria-hidden="true" ></i>Child , {item.label}</li>
         
           <br/>
             { Array.isArray(item.items) && !this.showChildren ? 
