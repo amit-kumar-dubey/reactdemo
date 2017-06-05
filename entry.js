@@ -2,14 +2,6 @@ import "./style.css";
 
 import "./app.jsx";
 
-//import "./stateless.jsx";
-
-import "./statefull.jsx";
-
-//import "./tree.jsx";
-
-
-
 
 
 
